@@ -1,0 +1,33 @@
+1,    Use assignments   // create db
+
+
+2,   use.user.insert({"id":2,"first_name":"Birgitta","last_name":"Kenyam","email":"bkenyam1@netlog.com","gender":"Agender","ip_address":"115.76.153.93"}),  // create collection and  insert elemnet
+
+3,    use.user.insertMany([{"id":1,"first_name":"Hanan","last_name":"Pimmocke","email":"hpimmocke0@delicious.com","gender":"Bigender","ip_address":"11.0.12.40"},
+{"id":2,"first_name":"Birgitta","last_name":"Kenyam","email":"bkenyam1@netlog.com","gender":"Agender","ip_address":"115.76.153.93"},
+{"id":3,"first_name":"Lisbeth","last_name":"Craine","email":"lcraine2@usnews.com","gender":"Female","ip_address":"120.19.170.111"},
+{"id":4,"first_name":"Kial","last_name":"Jancey","email":"kjancey3@blogs.com","gender":"Agender","ip_address":"17.126.234.237"},
+{"id":5,"first_name":"Kettie","last_name":"Hylton","email":"khylton4@tiny.cc","gender":"Polygender","ip_address":"64.8.156.4"},
+{"id":6,"first_name":"Hermina","last_name":"Eplett","email":"heplett5@a8.net","gender":"Male","ip_address":"110.79.150.85"},
+{"id":7,"first_name":"Willey","last_name":"Magowan","email":"wmagowan6@instagram.com","gender":"Non-binary","ip_address":"106.202.27.170"},
+{"id":8,"first_name":"Bernelle","last_name":"Sugarman","email":"bsugarman7@plala.or.jp","gender":"Agender","ip_address":"202.95.138.144"},
+{"id":9,"first_name":"Romona","last_name":"Hupka","email":"rhupka8@cdbaby.com","gender":"Non-binary","ip_address":"189.86.180.105"},
+{"id":10,"first_name":"Isak","last_name":"Cawthron","email":"icawthron9@google.com","gender":"Female","ip_address":"176.4.80.70"}]);
+
+
+
+4,    db.user.find(); ///finding all fileds
+
+
+5,    db.user.findOne({firstname:"Bernelle"})//finding one filed
+
+
+
+6,  db.user.update({firstname:"Bernelle"},{$set:{firstname:"Thirupathi"}})
+
+7,   db.user.updateMany({gender:"male"},{$set:{firstname:"Thiru",gender:"malemale"}
+
+
+8,   db.user.deleteOne({firstname:"Thirupathi"})
+
+9,    db.user.deleteMany({firstname:"Thirupathi"}
